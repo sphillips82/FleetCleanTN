@@ -1,11 +1,6 @@
-import { Award, Users, ThumbsUp, Leaf } from 'lucide-react';
+import { Users, ThumbsUp, Leaf } from 'lucide-react';
 
 const features = [
-  {
-    icon: Award,
-    title: 'Industry Expertise',
-    description: 'Over 10 years of experience in commercial fleet maintenance and washing services.',
-  },
   {
     icon: Users,
     title: 'Professional Team',
@@ -66,8 +61,8 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl transform rotate-3"></div>
             <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/5835359/pexels-photo-5835359.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Commercial fleet trucks"
+                src="/1000_f_908633143_lfrg9khi6qqu5brer7xbdrgqxokteint-2.jpg"
+                alt="Professional fleet washing service"
                 className="w-full h-[500px] object-cover"
               />
             </div>
