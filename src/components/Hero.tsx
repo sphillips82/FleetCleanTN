@@ -7,7 +7,7 @@ export default function Hero() {
 
   return (
     <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1619788/pexels-photo-1619788.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('/1000_f_1621991737_bq59qwjhqajzlrne8g26tsupyuhr5j4h.jpg')] bg-cover bg-center opacity-20"></div>
 
       <nav className="relative z-10 container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">

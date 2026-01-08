@@ -1,19 +1,19 @@
 const images = [
   {
-    url: 'https://images.pexels.com/photos/1619788/pexels-photo-1619788.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Semi truck fleet',
+    url: '/1000_f_368201609_opbrei78hhyfzijqaau3eascoh7xo2vt.jpg',
+    alt: 'Pressure washing truck wheels',
   },
   {
-    url: 'https://images.pexels.com/photos/1051373/pexels-photo-1051373.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Garbage truck',
+    url: '/1000_f_908633143_lfrg9khi6qqu5brer7xbdrgqxokteint-2.jpg',
+    alt: 'Professional garbage truck cleaning',
   },
   {
-    url: 'https://images.pexels.com/photos/1112080/pexels-photo-1112080.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Dump truck',
+    url: '/1000_f_1289901655_nofxa8y1q8u99ywdfihirk4h0gza81jg.jpg',
+    alt: 'Industrial dump truck cleaning',
   },
   {
-    url: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Heavy equipment excavator',
+    url: '/1000_f_1621991737_bq59qwjhqajzlrne8g26tsupyuhr5j4h.jpg',
+    alt: 'Heavy equipment pressure washing',
   },
 ];
 
