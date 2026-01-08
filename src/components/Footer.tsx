@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="mb-6">
-              <img src="/fleetclean_tn_vest_logo.png" alt="FleetClean TN" className="h-12 w-auto" />
+              <img src="/fleetclean_tn_vest_logo.png" alt="FleetClean TN" className="h-16 w-auto object-contain mix-blend-screen" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Tennessee's premier mobile fleet washing service. Professional, reliable, and eco-friendly cleaning for commercial vehicles.
@@ -62,8 +62,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:+16313440008" className="hover:text-blue-400 transition-colors">
-                    (631) 344-0008
+                  <a href="tel:+19313440008" className="hover:text-blue-400 transition-colors">
+                    (931) 344-0008
                   </a>
                 </div>
               </li>
