@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="mb-6">
-              <img src="/fleetclean_tn_vest_logo.png" alt="FleetClean TN" className="h-16 w-auto object-contain bg-white rounded-lg px-4 py-2" />
+              <img src="/fleetcleantn(logo_no_backdrop).png" alt="FleetClean TN" className="h-16 w-auto object-contain" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Tennessee's premier mobile fleet washing service. Professional, reliable, and eco-friendly cleaning for commercial vehicles.

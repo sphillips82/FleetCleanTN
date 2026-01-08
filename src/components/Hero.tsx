@@ -12,7 +12,7 @@ export default function Hero() {
       <nav className="relative z-10 container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/fleetclean_tn_vest_logo.png" alt="FleetClean TN" className="h-20 w-auto object-contain bg-white rounded-lg px-4 py-2" />
+            <img src="/fleetcleantn(logo_no_backdrop).png" alt="FleetClean TN" className="h-20 w-auto object-contain" />
           </div>
 
           <div className="hidden md:flex items-center gap-8">
