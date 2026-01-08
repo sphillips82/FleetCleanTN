@@ -22,9 +22,6 @@ export default function Gallery() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="inline-block bg-blue-100 text-blue-700 rounded-full px-4 py-2 mb-4 font-medium">
-            Our Work
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             See The Difference
           </h2>
