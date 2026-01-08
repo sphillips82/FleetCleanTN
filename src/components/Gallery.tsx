@@ -1,19 +1,19 @@
 const images = [
   {
-    url: 'https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Commercial delivery fleet',
+    url: 'https://images.pexels.com/photos/1619788/pexels-photo-1619788.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Semi truck fleet',
   },
   {
-    url: 'https://images.pexels.com/photos/1118448/pexels-photo-1118448.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Commercial truck fleet',
+    url: 'https://images.pexels.com/photos/1051373/pexels-photo-1051373.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Garbage truck',
   },
   {
-    url: 'https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Fleet of delivery trucks',
+    url: 'https://images.pexels.com/photos/1112080/pexels-photo-1112080.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Dump truck',
   },
   {
-    url: 'https://images.pexels.com/photos/1118446/pexels-photo-1118446.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Commercial semi trucks',
+    url: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Heavy equipment excavator',
   },
 ];
 

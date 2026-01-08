@@ -7,12 +7,12 @@ export default function Hero() {
 
   return (
     <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
-      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/6894420/pexels-photo-6894420.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
+      <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/1619788/pexels-photo-1619788.jpeg?auto=compress&cs=tinysrgb&w=1920')] bg-cover bg-center opacity-20"></div>
 
       <nav className="relative z-10 container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/fleetclean_tn_vest_logo.png" alt="FleetClean TN" className="h-20 w-auto object-contain mix-blend-screen" />
+            <img src="/fleetclean_tn_vest_logo.png" alt="FleetClean TN" className="h-20 w-auto object-contain bg-white rounded-lg px-4 py-2" />
           </div>
 
           <div className="hidden md:flex items-center gap-8">

@@ -66,8 +66,8 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl transform rotate-3"></div>
             <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Fleet washing in action"
+                src="https://images.pexels.com/photos/5835359/pexels-photo-5835359.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Commercial fleet trucks"
                 className="w-full h-[500px] object-cover"
               />
             </div>
