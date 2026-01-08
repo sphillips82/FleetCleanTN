@@ -28,7 +28,7 @@ export default function About() {
               About FleetCleanTN
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Tennessee's Most Trusted Fleet Washing Service
+              Tennessee's Trusted Fleet Washing Service
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               At FleetCleanTN, we understand that your fleet is more than just vehicles—it's your business's mobile billboard. A clean fleet projects professionalism, builds customer trust, and protects your investment.
