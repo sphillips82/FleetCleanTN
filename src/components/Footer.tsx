@@ -8,11 +8,8 @@ export default function Footer() {
       <div className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <Truck className="w-8 h-8 text-blue-400" />
-              <span className="text-2xl font-bold text-white">
-                FleetClean<span className="text-blue-400">TN</span>
-              </span>
+            <div className="mb-6">
+              <img src="/fleetclean_tn_vest_logo.png" alt="FleetClean TN" className="h-12 w-auto" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Tennessee's premier mobile fleet washing service. Professional, reliable, and eco-friendly cleaning for commercial vehicles.
@@ -54,8 +51,6 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>Fleet Truck Washing</li>
               <li>Pressure Washing</li>
-              <li>Detailing Services</li>
-              <li>Protective Coating</li>
               <li>Scheduled Maintenance</li>
               <li>Mobile Service</li>
             </ul>
@@ -67,8 +62,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:+1234567890" className="hover:text-blue-400 transition-colors">
-                    (123) 456-7890
+                  <a href="tel:+16313440008" className="hover:text-blue-400 transition-colors">
+                    (631) 344-0008
                   </a>
                 </div>
               </li>
@@ -83,7 +78,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  Serving all of Tennessee<br />and surrounding areas
+                  Nashville, TN<br />and surrounding areas
                 </div>
               </li>
             </ul>

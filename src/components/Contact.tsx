@@ -74,8 +74,8 @@ export default function Contact() {
                 <Phone className="w-6 h-6 text-blue-600" />
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Call Us</h3>
-              <a href="tel:+1234567890" className="text-blue-600 hover:text-blue-700 font-medium">
-                (123) 456-7890
+              <a href="tel:+16313440008" className="text-blue-600 hover:text-blue-700 font-medium">
+                (631) 344-0008
               </a>
               <p className="text-gray-600 text-sm mt-2">Mon-Fri: 7am-7pm<br />Sat-Sun: 8am-5pm</p>
             </div>
@@ -97,7 +97,7 @@ export default function Contact() {
               </div>
               <h3 className="font-bold text-gray-900 mb-2">Service Area</h3>
               <p className="text-gray-600">
-                Serving all of Tennessee and surrounding areas
+                Nashville, TN and surrounding areas
               </p>
             </div>
           </div>

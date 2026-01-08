@@ -12,16 +12,6 @@ const services = [
     description: 'High-powered pressure washing to remove stubborn dirt, grime, and road debris. Eco-friendly cleaning solutions.',
   },
   {
-    icon: Sparkles,
-    title: 'Detailing Services',
-    description: 'Complete detailing packages including interior cleaning, waxing, and protective coatings for long-lasting shine.',
-  },
-  {
-    icon: Shield,
-    title: 'Protective Coating',
-    description: 'Advanced protective coatings to shield your fleet from weather, UV rays, and environmental contaminants.',
-  },
-  {
     icon: Clock,
     title: 'Scheduled Maintenance',
     description: 'Regular washing schedules tailored to your fleet\'s needs. Never worry about vehicle appearance again.',
@@ -49,7 +39,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (

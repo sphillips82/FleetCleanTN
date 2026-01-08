@@ -1,19 +1,19 @@
 const images = [
   {
-    url: 'https://images.pexels.com/photos/6894420/pexels-photo-6894420.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Fleet truck washing service',
+    url: 'https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Commercial delivery fleet',
   },
   {
-    url: 'https://images.pexels.com/photos/4489702/pexels-photo-4489702.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Commercial vehicle cleaning',
+    url: 'https://images.pexels.com/photos/1118448/pexels-photo-1118448.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Commercial truck fleet',
   },
   {
-    url: 'https://images.pexels.com/photos/5214413/pexels-photo-5214413.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Professional truck detailing',
+    url: 'https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Fleet of delivery trucks',
   },
   {
-    url: 'https://images.pexels.com/photos/4489744/pexels-photo-4489744.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Mobile fleet washing',
+    url: 'https://images.pexels.com/photos/1118446/pexels-photo-1118446.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Commercial semi trucks',
   },
 ];
 
@@ -49,15 +49,6 @@ export default function Gallery() {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-gray-100 rounded-2xl p-8 max-w-3xl">
-            <p className="text-gray-700 text-lg mb-6 italic">
-              "FleetCleanTN has been servicing our fleet of 45 trucks for over 3 years. They're always on time, professional, and our trucks look brand new after every wash. Highly recommend!"
-            </p>
-            <div className="font-bold text-gray-900">— Mike Johnson</div>
-            <div className="text-gray-600">Operations Manager, ABC Logistics</div>
-          </div>
-        </div>
       </div>
     </section>
   );

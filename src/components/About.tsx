@@ -39,7 +39,7 @@ export default function About() {
               At FleetCleanTN, we understand that your fleet is more than just vehicles—it's your business's mobile billboard. A clean fleet projects professionalism, builds customer trust, and protects your investment.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Since our founding, we've been committed to delivering exceptional mobile washing services that fit seamlessly into your operations. Our state-of-the-art equipment and eco-friendly products ensure your fleet looks its best while minimizing environmental impact.
+              We're committed to delivering exceptional mobile washing services that fit seamlessly into your operations. Our state-of-the-art equipment and eco-friendly products ensure your fleet looks its best while minimizing environmental impact.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -70,10 +70,6 @@ export default function About() {
                 alt="Fleet washing in action"
                 className="w-full h-[500px] object-cover"
               />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white rounded-2xl p-6 shadow-xl max-w-xs">
-              <div className="text-4xl font-bold mb-2">10+</div>
-              <div className="text-blue-100">Years of Excellence in Fleet Care</div>
             </div>
           </div>
         </div>
