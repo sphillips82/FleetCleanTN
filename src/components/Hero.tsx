@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-6 py-12 md:py-16">
         <div className="max-w-3xl">
           <div className="inline-block bg-blue-600/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 py-2 mb-6">
-            <span className="text-blue-300 font-medium">Tennessee's Trusted Fleet Washing Service</span>
+            <span className="text-blue-300 font-medium">Locally Owned & Operated in Tennessee</span>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -53,18 +53,22 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
-            Expert mobile fleet washing services for trucks, trailers, and commercial vehicles.
-            We come to you, saving time and keeping your fleet looking its best.
+            Family-owned mobile fleet washing serving Tennessee businesses.
+            Your neighbors, committed to keeping your fleet spotless with personalized service you can trust.
           </p>
 
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
               <div className="text-3xl font-bold text-blue-400 mb-2">24/7</div>
               <div className="text-gray-300">Available Service</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
               <div className="text-3xl font-bold text-blue-400 mb-2">100%</div>
-              <div className="text-gray-300">Satisfaction Rate</div>
+              <div className="text-gray-300">Local & Family Owned</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
+              <div className="text-3xl font-bold text-blue-400 mb-2">TN</div>
+              <div className="text-gray-300">Born & Raised</div>
             </div>
           </div>
         </div>

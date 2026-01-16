@@ -18,8 +18,8 @@ const services = [
   },
   {
     icon: MapPin,
-    title: 'Mobile Service',
-    description: 'We come to your location with all necessary equipment. Minimal disruption to your operations.',
+    title: 'We Come To You',
+    description: 'Mobile service throughout Tennessee. Supporting local businesses one fleet at a time.',
   },
 ];
 
@@ -32,10 +32,10 @@ export default function Services() {
             Our Services
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Complete Fleet Care Solutions
+            Local Service, Professional Results
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Professional washing services designed specifically for commercial fleets of all sizes
+            Supporting Tennessee businesses with reliable fleet washing from owners who care about your success
           </p>
         </div>
 
@@ -60,16 +60,16 @@ export default function Services() {
         <div className="mt-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-12 text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Custom Fleet Programs Available
+              Flexible Programs for Local Businesses
             </h3>
             <p className="text-xl text-blue-100 mb-8">
-              Need a specialized washing schedule or unique service package? We create custom programs tailored to your fleet's specific requirements.
+              As a family-owned business, we understand every company has unique needs. Call us directly to discuss custom washing schedules that work for you—no automated systems, just real conversation with the owners.
             </p>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors"
             >
-              Discuss Your Needs
+              Talk With The Owners
             </button>
           </div>
         </div>

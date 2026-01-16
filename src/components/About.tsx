@@ -1,20 +1,25 @@
-import { Users, ThumbsUp, Leaf } from 'lucide-react';
+import { Users, ThumbsUp, Leaf, Home } from 'lucide-react';
 
 const features = [
   {
+    icon: Home,
+    title: 'Locally Owned',
+    description: 'A family business rooted in Tennessee. We live here, work here, and care about our community.',
+  },
+  {
     icon: Users,
-    title: 'Professional Team',
-    description: 'Trained and certified technicians who treat your fleet with the utmost care.',
+    title: 'Personal Service',
+    description: 'You\'ll work directly with the owners. No corporate red tape, just honest, reliable service.',
   },
   {
     icon: ThumbsUp,
-    title: 'Quality Guarantee',
-    description: '100% satisfaction guaranteed or we\'ll make it right. Your trust is our priority.',
+    title: 'Small Business Values',
+    description: 'Your satisfaction is our reputation. We treat every customer like family.',
   },
   {
     icon: Leaf,
     title: 'Eco-Friendly',
-    description: 'Environmentally responsible cleaning products and water reclamation systems.',
+    description: 'Protecting Tennessee\'s environment with responsible cleaning products and practices.',
   },
 ];
 
@@ -28,13 +33,13 @@ export default function About() {
               About FleetCleanTN
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Tennessee's Trusted Fleet Washing Service
+              Your Local Fleet Washing Partner
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              At FleetCleanTN, we understand that your fleet is more than just vehicles—it's your business's mobile billboard. A clean fleet projects professionalism, builds customer trust, and protects your investment.
+              FleetCleanTN is a family-owned business proudly serving Tennessee's local businesses. We're not a national chain—we're your neighbors who understand the importance of building lasting relationships and delivering personalized service.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We're committed to delivering exceptional mobile washing services that fit seamlessly into your operations. Our state-of-the-art equipment and eco-friendly products ensure your fleet looks its best while minimizing environmental impact.
+              When you work with us, you're supporting a local family and getting the hands-on attention your fleet deserves. We take pride in every job because our reputation in this community depends on it. That's the difference between a local business and everyone else.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -54,6 +59,13 @@ export default function About() {
                   </div>
                 );
               })}
+            </div>
+
+            <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
+              <p className="text-gray-700 italic leading-relaxed">
+                "We started this business to serve our local community with integrity and quality. Every fleet we clean represents a Tennessee business owner working hard just like us. That's why we treat your vehicles like our own."
+              </p>
+              <p className="text-gray-900 font-semibold mt-3">— The FleetCleanTN Family</p>
             </div>
           </div>
 

@@ -12,7 +12,7 @@ export default function Footer() {
               <img src="/fleetcleantn(logo_no_backdrop).png" alt="FleetClean TN" className="h-24 w-auto object-contain" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
-              Tennessee's premier mobile fleet washing service. Professional, reliable, and eco-friendly cleaning for commercial vehicles.
+              Family-owned and locally operated in Tennessee. Supporting local businesses with professional fleet washing you can trust.
             </p>
             <div className="flex items-center gap-2 text-gray-400">
               <Clock className="w-5 h-5" />
@@ -88,7 +88,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-center md:text-left">
-              © {currentYear} FleetCleanTN. All rights reserved.
+              © {currentYear} FleetCleanTN. Locally Owned & Operated. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="hover:text-blue-400 transition-colors">
