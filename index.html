@@ -24,36 +24,8 @@
     <meta name="keywords" content="fleet washing Tennessee, truck washing Nashville, mobile fleet cleaning, commercial vehicle washing, pressure washing trucks, fleet maintenance TN, locally owned fleet washing, family business Nashville" />
     <meta name="author" content="FleetCleanTN" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://fleetcleantn.com" />
+    <link rel="canonical" href="https://fleetcleantn.com/" />
 
-    <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://www.fleetcleantn.com/#business",
-    "name": "FleetClean TN",
-    "url": "https://www.fleetcleantn.com/",
-    "telephone": "931-344-0008",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Nashville",
-      "addressRegion": "TN",
-      "addressCountry": "US"
-    },
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "Nashville Metropolitan Area"
-    }
-  }
-  </script>
-
-  <title>FleetClean TN</title>
-</head>
     <!-- Geo Tags for Local SEO -->
     <meta name="geo.region" content="US-TN" />
     <meta name="geo.placename" content="Nashville" />
@@ -62,7 +34,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://fleetcleantn.com" />
+    <meta property="og:url" content="https://fleetcleantn.com/" />
     <meta property="og:title" content="FleetCleanTN - Locally Owned Fleet Washing Service" />
     <meta property="og:description" content="Family-owned mobile fleet washing service in Tennessee. Professional truck and trailer cleaning for local businesses. Available 24/7." />
     <meta property="og:image" content="https://fleetcleantn.com/fleetclean_tn_vest_logo.png" />
@@ -72,7 +44,7 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://fleetcleantn.com" />
+    <meta name="twitter:url" content="https://fleetcleantn.com/" />
     <meta name="twitter:title" content="FleetCleanTN - Locally Owned Fleet Washing Service" />
     <meta name="twitter:description" content="Family-owned mobile fleet washing service in Tennessee. Professional truck and trailer cleaning for local businesses. Available 24/7." />
     <meta name="twitter:image" content="https://fleetcleantn.com/fleetclean_tn_vest_logo.png" />
@@ -88,15 +60,16 @@
     <meta name="theme-color" content="#2563eb" />
     <meta name="msapplication-TileColor" content="#2563eb" />
 
-    <!-- Structured Data - Local Business -->
+    <!-- Structured Data - LocalBusiness (ONLY ONE) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
+      "@id": "https://fleetcleantn.com/#business",
       "name": "FleetCleanTN",
       "image": "https://fleetcleantn.com/fleetclean_tn_vest_logo.png",
       "description": "Family-owned mobile fleet washing service in Tennessee. Professional truck and trailer cleaning for local businesses.",
-      "url": "https://fleetcleantn.com",
+      "url": "https://fleetcleantn.com/",
       "telephone": "+19313440008",
       "email": "info@fleetcleantn.com",
       "address": {
@@ -105,94 +78,26 @@
         "addressRegion": "TN",
         "addressCountry": "US"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 36.1627,
-        "longitude": -86.7816
-      },
       "areaServed": {
-        "@type": "State",
+        "@type": "AdministrativeArea",
         "name": "Tennessee"
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "priceRange": "$$",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "1"
-      },
-      "sameAs": []
+      "priceRange": "$$"
     }
     </script>
 
-    <!-- Structured Data - Service -->
+    <!-- Structured Data - Service (REFERENCE business by @id, don't create a new LocalBusiness) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Fleet Washing and Mobile Truck Cleaning",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "FleetCleanTN"
-      },
-      "areaServed": {
-        "@type": "State",
-        "name": "Tennessee"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Fleet Washing Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Fleet Truck Washing",
-              "description": "Comprehensive exterior washing for all types of commercial trucks and trailers"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Pressure Washing",
-              "description": "High-powered pressure washing to remove stubborn dirt, grime, and road debris"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Scheduled Maintenance",
-              "description": "Regular washing schedules tailored to your fleet's needs"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Mobile Service",
-              "description": "We come to your location with all necessary equipment"
-            }
-          }
-        ]
-      }
+      "provider": { "@id": "https://fleetcleantn.com/#business" },
+      "areaServed": { "@type": "AdministrativeArea", "name": "Tennessee" }
     }
     </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
