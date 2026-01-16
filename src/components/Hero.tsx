@@ -9,16 +9,16 @@ export default function Hero() {
     <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
       <div className="absolute inset-0 bg-[url('/fleetcleantn(logo_no_backdrop).png')] bg-cover bg-center opacity-20"></div>
 
-      <nav className="relative z-10 container mx-auto px-6 py-6">
+      <nav className="relative z-10 container mx-auto px-6 py-6" aria-label="Main navigation">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-            <a href="#services" className="hover:text-blue-400 transition-colors">Services</a>
-            <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
-            <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
-            <a href="tel:+19313440008" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-2.5 rounded-lg transition-colors font-medium">
+            <a href="#services" className="hover:text-blue-400 transition-colors" aria-label="View our services">Services</a>
+            <a href="#about" className="hover:text-blue-400 transition-colors" aria-label="Learn about us">About</a>
+            <a href="#contact" className="hover:text-blue-400 transition-colors" aria-label="Contact us">Contact</a>
+            <a href="tel:+19313440008" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-2.5 rounded-lg transition-colors font-medium" aria-label="Call FleetCleanTN at 931-344-0008">
               <Phone className="w-4 h-4" />
               Call Now
             </a>

@@ -1,0 +1,21 @@
+{
+  "name": "FleetCleanTN - Locally Owned Fleet Washing Service",
+  "short_name": "FleetCleanTN",
+  "description": "Family-owned mobile fleet washing service in Tennessee. Professional truck and trailer cleaning for local businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/fleetcleantn(logo_no_backdrop).png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "automotive", "services"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

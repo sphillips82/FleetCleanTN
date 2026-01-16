@@ -8,11 +8,15 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen">
-      <Hero />
-      <Services />
-      <About />
-      <Gallery />
-      <Contact />
+      <header>
+        <Hero />
+      </header>
+      <main>
+        <Services />
+        <About />
+        <Gallery />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

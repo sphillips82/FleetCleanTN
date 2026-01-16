@@ -1,0 +1,11 @@
+# robots.txt for FleetCleanTN
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.env
+
+# Sitemap location
+Sitemap: https://fleetcleantn.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
