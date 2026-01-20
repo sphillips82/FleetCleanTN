@@ -39,16 +39,12 @@ function Go() {
 
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 flex items-center justify-center w-32 h-32">
-                <div className="relative">
-                  <svg className="w-24 h-24" viewBox="0 0 100 100" fill="none">
-                    <path d="M50 10 L70 30 L90 25 L85 45 L95 65 L75 70 L65 90 L50 80 L35 90 L25 70 L5 65 L15 45 L10 25 L30 30 Z" fill="#10b981" opacity="0.2"/>
-                    <path d="M50 20 L65 35 L80 32 L77 47 L85 60 L70 63 L63 78 L50 70 L37 78 L30 63 L15 60 L23 47 L20 32 L35 35 Z" fill="#10b981"/>
-                  </svg>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-8 h-12 bg-gray-800 rounded-b-full" style={{clipPath: 'polygon(30% 0, 70% 0, 60% 100%, 40% 100%)'}}></div>
-                  </div>
-                </div>
+              <div className="flex-shrink-0">
+                <img
+                  src="/clean_it_tn_logo.png"
+                  alt="Clean It TN"
+                  className="w-32 h-32 object-contain"
+                />
               </div>
               <div className="flex-1">
                 <h2 className="text-3xl font-bold text-gray-900 mb-3 flex items-center gap-2">
