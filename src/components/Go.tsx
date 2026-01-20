@@ -10,7 +10,10 @@ function Go() {
         </div>
 
         <div className="space-y-6">
-          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+          <a
+            href="https://www.fleetcleantn.com"
+            className="block bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 cursor-pointer"
+          >
             <div className="flex items-start gap-6">
               <div className="flex-shrink-0">
                 <img
@@ -24,20 +27,17 @@ function Go() {
                   Fleet Clean TN
                   <ExternalLink className="w-6 h-6 text-gray-400" />
                 </h2>
-                <p className="text-lg text-gray-600 mb-4">
+                <p className="text-lg text-gray-600">
                   Professional fleet and commercial vehicle cleaning services
                 </p>
-                <a
-                  href="https://www.fleetcleantn.com"
-                  className="inline-block px-6 py-3 bg-blue-50 text-blue-700 font-semibold rounded-lg hover:bg-blue-100 transition-colors duration-200"
-                >
-                  Visit www.fleetcleantn.com
-                </a>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+          <a
+            href="https://cleanittn.com"
+            className="block bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 cursor-pointer"
+          >
             <div className="flex items-start gap-6">
               <div className="flex-shrink-0">
                 <img
@@ -51,18 +51,12 @@ function Go() {
                   Clean It TN
                   <ExternalLink className="w-6 h-6 text-gray-400" />
                 </h2>
-                <p className="text-lg text-gray-600 mb-4">
+                <p className="text-lg text-gray-600">
                   Comprehensive cleaning solutions for your business and property
                 </p>
-                <a
-                  href="https://cleanittn.com"
-                  className="inline-block px-6 py-3 bg-green-50 text-green-700 font-semibold rounded-lg hover:bg-green-100 transition-colors duration-200"
-                >
-                  Visit cleanittn.com
-                </a>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div className="text-center mt-12">
