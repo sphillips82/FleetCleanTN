@@ -41,7 +41,7 @@ function Go() {
             <div className="flex items-start gap-6">
               <div className="flex-shrink-0">
                 <img
-                  src="/clean_it_tn_logo.png"
+                  src="/cleanit_tn_logo_nbg.png"
                   alt="Clean It TN"
                   className="w-32 h-32 object-contain"
                 />
