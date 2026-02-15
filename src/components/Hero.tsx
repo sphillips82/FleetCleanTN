@@ -44,7 +44,7 @@ export default function Hero() {
               className="bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              (629)209WASH(9274)
+              (629)209-WASH
             </a>
           </div>
 
