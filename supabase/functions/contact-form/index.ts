@@ -94,15 +94,15 @@ Deno.serve(async (req: Request) => {
         "Authorization": `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
-        from: "FleetCleanTN <noreply@fleetcleantn.com>",
+        from: "FleetCleanTN <onboarding@resend.dev>",
         to: ["quote@fleetcleantn.com"],
-        subject: "New Fleet Quote Request - FleetCleanTN",
+        subject: "New Fleet Quote Request",
         html: `
-          <h2>New Contact Form Submission</h2>
+          <h2>New Fleet Quote Request - FleetCleanTN</h2>
           <p><strong>Name:</strong> ${formData.name}</p>
           <p><strong>Email:</strong> ${formData.email}</p>
           <p><strong>Phone:</strong> ${formData.phone}</p>
-          ${formData.company ? `<p><strong>Company:</strong> ${formData.company}</p>` : ""}
+          ${formData.company ? `<p><strong>Company Name:</strong> ${formData.company}</p>` : ""}
           ${formData.fleetSize ? `<p><strong>Fleet Size:</strong> ${formData.fleetSize}</p>` : ""}
           <p><strong>Message:</strong></p>
           <p>${formData.message.replace(/\n/g, "<br>")}</p>
@@ -114,7 +114,7 @@ Deno.serve(async (req: Request) => {
       const errorData = await emailResponse.text();
       console.error("Resend API error:", errorData);
       return new Response(
-        JSON.stringify({ success: false, message: "Failed to send email. Please try again or contact us directly." }),
+        JSON.stringify({ success: false, message: "Quote request is temporarily unavailable. Please call (629) 209-9274." }),
         {
           status: 500,
           headers: {
@@ -138,7 +138,7 @@ Deno.serve(async (req: Request) => {
   } catch (error) {
     console.error("Error processing contact form:", error);
     return new Response(
-      JSON.stringify({ success: false, message: "Something went wrong. Please try again." }),
+      JSON.stringify({ success: false, message: "Quote request is temporarily unavailable. Please call (629) 209-9274." }),
       {
         status: 500,
         headers: {
