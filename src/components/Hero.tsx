@@ -28,9 +28,13 @@ export default function Hero() {
 
       <div className="relative z-10 container mx-auto px-6 py-12 md:py-16">
         <div className="max-w-3xl">
-          <div className="inline-block bg-blue-600/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 py-2 mb-6">
-            <span className="text-blue-300 font-medium">Locally Owned & Operated in Tennessee</span>
-          </div>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            Mobile Fleet Washing in <span className="text-blue-400">Nashville, TN</span>
+          </h1>
+
+          <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
+            FleetCleanTN provides mobile fleet washing for trucks, vans, trailers, and commercial vehicles across Nashville and surrounding areas.
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <button
@@ -48,26 +52,18 @@ export default function Hero() {
             </a>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Mobile Fleet Washing in <span className="text-blue-400">Nashville, TN</span>
-          </h1>
-
-          <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
-            FleetCleanTN provides mobile fleet washing for trucks, vans, trailers, and commercial vehicles across Nashville and surrounding areas.
-          </p>
-
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
-              <div className="text-3xl font-bold text-blue-400 mb-2">Owner-Operated</div>
-              <div className="text-gray-300">Locally Owned</div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+              <div className="text-2xl font-bold text-blue-400 mb-1">Owner-Operated</div>
+              <div className="text-gray-300 text-sm">Nashville Based</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
-              <div className="text-3xl font-bold text-blue-400 mb-2">Fully Insured</div>
-              <div className="text-gray-300">Commercial-Focused</div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+              <div className="text-2xl font-bold text-blue-400 mb-1">Fully Insured</div>
+              <div className="text-gray-300 text-sm">Commercial Coverage</div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
-              <div className="text-3xl font-bold text-blue-400 mb-2">Free Quotes</div>
-              <div className="text-gray-300">Reliable Scheduling</div>
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
+              <div className="text-2xl font-bold text-blue-400 mb-1">Free Quotes</div>
+              <div className="text-gray-300 text-sm">No Obligation</div>
             </div>
           </div>
         </div>

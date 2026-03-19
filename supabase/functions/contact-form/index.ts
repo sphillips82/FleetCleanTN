@@ -95,8 +95,8 @@ Deno.serve(async (req: Request) => {
       },
       body: JSON.stringify({
         from: "FleetCleanTN <noreply@fleetcleantn.com>",
-        to: ["info@fleetcleantn.com"],
-        subject: "New FleetCleanTN Lead",
+        to: ["quote@fleetcleantn.com"],
+        subject: "New Fleet Quote Request - FleetCleanTN",
         html: `
           <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${formData.name}</p>
@@ -126,7 +126,7 @@ Deno.serve(async (req: Request) => {
     }
 
     return new Response(
-      JSON.stringify({ success: true, message: "Message sent. We'll contact you shortly." }),
+      JSON.stringify({ success: true, message: "Quote request sent. We'll contact you shortly." }),
       {
         status: 200,
         headers: {
