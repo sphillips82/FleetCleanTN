@@ -37,38 +37,37 @@ export default function Hero() {
               onClick={scrollToContact}
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105 shadow-lg shadow-blue-600/50"
             >
-              Get Free Quote
+              Request Fleet Quote
             </button>
             <a
               href="tel:+16292099274"
               className="bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/30 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              (629)209-WASH
+              Call Now
             </a>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Keep Your Fleet <span className="text-blue-400">Spotless</span> & Professional
+            Mobile Fleet Washing in <span className="text-blue-400">Nashville, TN</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
-            Family-owned mobile fleet washing serving Tennessee businesses.
-            Your neighbors, committed to keeping your fleet spotless with personalized service you can trust.
+            FleetCleanTN provides mobile fleet washing for trucks, vans, trailers, and commercial vehicles across Nashville and surrounding areas.
           </p>
 
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
-              <div className="text-3xl font-bold text-blue-400 mb-2">24/7</div>
-              <div className="text-gray-300">Available Service</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">Owner-Operated</div>
+              <div className="text-gray-300">Locally Owned</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
-              <div className="text-3xl font-bold text-blue-400 mb-2">100%</div>
-              <div className="text-gray-300">Local & Family Owned</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">Fully Insured</div>
+              <div className="text-gray-300">Commercial-Focused</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
-              <div className="text-3xl font-bold text-blue-400 mb-2">TN</div>
-              <div className="text-gray-300">Born & Raised</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">Free Quotes</div>
+              <div className="text-gray-300">Reliable Scheduling</div>
             </div>
           </div>
         </div>
