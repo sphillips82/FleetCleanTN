@@ -4,22 +4,22 @@ const services = [
   {
     icon: Truck,
     title: 'Fleet Truck Washing',
-    description: 'Comprehensive exterior washing for all types of commercial trucks and trailers. Professional results that enhance your brand image.',
+    description: 'Comprehensive exterior washing for all types of commercial trucks. Professional results for your fleet.',
   },
   {
     icon: Droplets,
-    title: 'Pressure Washing',
-    description: 'High-powered pressure washing to remove stubborn dirt, grime, and road debris. Eco-friendly cleaning solutions.',
+    title: 'Trailer Washing',
+    description: 'Complete trailer cleaning for box trucks, dry vans, and all commercial trailers.',
   },
   {
     icon: Clock,
-    title: 'Scheduled Maintenance',
-    description: 'Regular washing schedules tailored to your fleet\'s needs. Never worry about vehicle appearance again.',
+    title: 'Scheduled Fleet Washing',
+    description: 'Weekly, bi-weekly, or monthly programs tailored to your business operations.',
   },
   {
     icon: MapPin,
-    title: 'We Come To You',
-    description: 'Mobile service throughout Tennessee. Supporting local businesses one fleet at a time.',
+    title: 'On-Site Mobile Service',
+    description: 'We bring all equipment to your location across Nashville and surrounding areas.',
   },
 ];
 
@@ -32,10 +32,10 @@ export default function Services() {
             Our Services
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Local Service, Professional Results
+            Commercial Fleet Washing Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Supporting Tennessee businesses with reliable fleet washing from owners who care about your success
+            Professional mobile fleet washing for trucks, vans, trailers, and commercial vehicles in Nashville, TN
           </p>
         </div>
 
@@ -60,16 +60,16 @@ export default function Services() {
         <div className="mt-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl p-12 text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Flexible Programs for Local Businesses
+              Custom Fleet Washing Programs
             </h3>
             <p className="text-xl text-blue-100 mb-8">
-              As a family-owned business, we understand every company has unique needs. Call us directly to discuss custom washing schedules that work for you—no automated systems, just real conversation with the owners.
+              We create washing schedules that fit your operation. Contact us to discuss a program tailored to your fleet size and needs.
             </p>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors"
             >
-              Talk With The Owners
+              Request Fleet Quote
             </button>
           </div>
         </div>

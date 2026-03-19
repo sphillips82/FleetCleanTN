@@ -74,10 +74,10 @@ export default function Contact() {
             Get In Touch
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Request Your Free Quote
+            Request Your Fleet Quote
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ready to keep your fleet looking professional? Contact us today for a customized quote.
+            Contact us for a customized fleet washing quote for your Nashville business.
           </p>
         </div>
 
@@ -91,7 +91,6 @@ export default function Contact() {
               <a href="tel:+16292099274" className="text-blue-600 hover:text-blue-700 font-medium">
                 (629) 209-9274
               </a>
-              <p className="text-gray-600 text-sm mt-2">Mon-Fri: 7am-7pm<br />Sat-Sun: 8am-5pm</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -102,7 +101,6 @@ export default function Contact() {
               <a href="mailto:info@fleetcleantn.com" className="text-blue-600 hover:text-blue-700 font-medium break-all">
                 info@fleetcleantn.com
               </a>
-              <p className="text-gray-600 text-sm mt-2">We respond within 24 hours</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">

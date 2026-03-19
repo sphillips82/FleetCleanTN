@@ -4,22 +4,22 @@ const features = [
   {
     icon: Home,
     title: 'Locally Owned',
-    description: 'A family business rooted in Tennessee. We live here, work here, and care about our community.',
+    description: 'Owner-operated business based in Nashville, Tennessee.',
   },
   {
     icon: Users,
-    title: 'Personal Service',
-    description: 'You\'ll work directly with the owners. No corporate red tape, just honest, reliable service.',
+    title: 'Commercial Focused',
+    description: 'Specializing in fleet washing for businesses and contractors.',
   },
   {
     icon: ThumbsUp,
-    title: 'Small Business Values',
-    description: 'Your satisfaction is our reputation. We treat every customer like family.',
+    title: 'Reliable Service',
+    description: 'Consistent, scheduled washing programs for your fleet.',
   },
   {
     icon: Leaf,
-    title: 'Eco-Friendly',
-    description: 'Protecting Tennessee\'s environment with responsible cleaning products and practices.',
+    title: 'Mobile Service',
+    description: 'We bring all equipment to your location across Nashville and surrounding areas.',
   },
 ];
 
@@ -33,13 +33,13 @@ export default function About() {
               About FleetCleanTN
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Your Local Fleet Washing Partner
+              Local Fleet Washing in Nashville
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              FleetCleanTN is a family-owned business proudly serving Tennessee's local businesses. We're not a national chain—we're your neighbors who understand the importance of building lasting relationships and delivering personalized service.
+              FleetCleanTN is an owner-operated mobile fleet washing service serving Nashville and surrounding areas. We provide professional truck and trailer cleaning for commercial fleets.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              When you work with us, you're supporting a local family and getting the hands-on attention your fleet deserves. We take pride in every job because our reputation in this community depends on it. That's the difference between a local business and everyone else.
+              We specialize in scheduled washing programs tailored to your fleet size and business operations. Our mobile service brings all equipment to your location.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -62,10 +62,9 @@ export default function About() {
             </div>
 
             <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
-              <p className="text-gray-700 italic leading-relaxed">
-                "We started this business to serve our local community with integrity and quality. Every fleet we clean represents a Tennessee business owner working hard just like us. That's why we treat your vehicles like our own."
+              <p className="text-gray-700 leading-relaxed">
+                <strong className="text-gray-900">Serving Nashville and surrounding areas:</strong> Murfreesboro, Franklin, Brentwood, Clarksville, Smyrna, Hendersonville, Lebanon, Gallatin, and Mount Juliet.
               </p>
-              <p className="text-gray-900 font-semibold mt-3">— The FleetCleanTN Family</p>
             </div>
           </div>
 

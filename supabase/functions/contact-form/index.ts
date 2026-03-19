@@ -75,7 +75,7 @@ Deno.serve(async (req: Request) => {
     if (!resendApiKey) {
       console.error("RESEND_API_KEY not configured");
       return new Response(
-        JSON.stringify({ success: false, message: "Email service not configured. Please contact us directly." }),
+        JSON.stringify({ success: false, message: "Quote request is temporarily unavailable. Please call (629) 209-9274." }),
         {
           status: 500,
           headers: {

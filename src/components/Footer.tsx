@@ -11,13 +11,9 @@ export default function Footer() {
             <div className="mb-6">
               <img src="/fleetcleantn(logo_no_backdrop).png" alt="FleetClean TN" className="h-24 w-auto object-contain" />
             </div>
-            <p className="text-gray-400 leading-relaxed mb-6">
-              Family-owned and locally operated in Tennessee. Supporting local businesses with professional fleet washing you can trust.
+            <p className="text-gray-400 leading-relaxed">
+              Owner-operated mobile fleet washing in Nashville, TN. Professional truck and trailer cleaning for commercial fleets.
             </p>
-            <div className="flex items-center gap-2 text-gray-400">
-              <Clock className="w-5 h-5" />
-              <span>Available 24/7</span>
-            </div>
           </div>
 
           <div>
@@ -50,9 +46,9 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-6">Services</h3>
             <ul className="space-y-3">
               <li>Fleet Truck Washing</li>
-              <li>Pressure Washing</li>
-              <li>Scheduled Maintenance</li>
-              <li>Mobile Service</li>
+              <li>Trailer Washing</li>
+              <li>Scheduled Fleet Washing</li>
+              <li>On-Site Mobile Service</li>
             </ul>
           </div>
 
