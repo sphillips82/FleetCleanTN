@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,23 +7,36 @@ export default function Contact() {
     email: '',
     phone: '',
     company: '',
-    fleet_size: '',
+    fleetSize: '',
     message: '',
+    honeypot: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    setErrorMessage('');
 
     try {
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert([formData]);
+      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/contact-form`;
 
-      if (error) throw error;
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || 'Failed to send message');
+      }
 
       setSubmitStatus('success');
       setFormData({
@@ -32,14 +44,16 @@ export default function Contact() {
         email: '',
         phone: '',
         company: '',
-        fleet_size: '',
+        fleetSize: '',
         message: '',
+        honeypot: '',
       });
 
       setTimeout(() => setSubmitStatus('idle'), 5000);
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -107,13 +121,13 @@ export default function Contact() {
               {submitStatus === 'success' && (
                 <div className="mb-6 bg-green-50 border border-green-200 rounded-lg p-4 flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <p className="text-green-800">Thank you! We'll contact you within 24 hours.</p>
+                  <p className="text-green-800">Message sent. We'll contact you shortly.</p>
                 </div>
               )}
 
               {submitStatus === 'error' && (
                 <div className="mb-6 bg-red-50 border border-red-200 rounded-lg p-4">
-                  <p className="text-red-800">Something went wrong. Please try again or call us directly.</p>
+                  <p className="text-red-800">{errorMessage || 'Something went wrong. Please try again or call us directly.'}</p>
                 </div>
               )}
 
@@ -152,12 +166,13 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
-                    Phone Number
+                    Phone Number *
                   </label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
+                    required
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
@@ -182,13 +197,13 @@ export default function Contact() {
               </div>
 
               <div className="mb-6">
-                <label htmlFor="fleet_size" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="fleetSize" className="block text-gray-700 font-medium mb-2">
                   Fleet Size
                 </label>
                 <select
-                  id="fleet_size"
-                  name="fleet_size"
-                  value={formData.fleet_size}
+                  id="fleetSize"
+                  name="fleetSize"
+                  value={formData.fleetSize}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                 >
@@ -200,6 +215,17 @@ export default function Contact() {
                   <option value="50+">50+ vehicles</option>
                 </select>
               </div>
+
+              <input
+                type="text"
+                name="honeypot"
+                value={formData.honeypot}
+                onChange={handleChange}
+                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px' }}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+              />
 
               <div className="mb-6">
                 <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
