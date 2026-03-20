@@ -38,25 +38,20 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch('https://formspree.io/f/xnnqbqdr', {
+      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/contact-form`;
+
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.company,
-          fleetSize: formData.fleetSize,
-          message: formData.message,
-          _replyto: formData.email,
-          _subject: 'New Fleet Quote Request - FleetCleanTN',
-        }),
+        body: JSON.stringify(formData),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to send message');
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || 'Failed to send message');
       }
 
       setSubmitStatus('success');
@@ -74,7 +69,8 @@ export default function Contact() {
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
-      setErrorMessage('Failed to send message. Please call (629) 209-9274.');
+      const errorMsg = error instanceof Error ? error.message : 'Failed to send message.';
+      setErrorMessage(`${errorMsg} Please call (629) 209-9274 or email quote@fleetcleantn.com directly.`);
     } finally {
       setIsSubmitting(false);
     }
