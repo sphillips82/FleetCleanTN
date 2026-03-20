@@ -8,7 +8,7 @@ const features = [
   },
   {
     icon: Users,
-    title: 'Commercial Focused',
+    title: 'Commercial-Focused',
     description: 'Specializing in fleet washing for businesses and contractors.',
   },
   {
@@ -36,10 +36,7 @@ export default function About() {
               Local Fleet Washing in Nashville
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              FleetCleanTN is an owner-operated mobile fleet washing service serving Nashville and surrounding areas. We provide professional truck and trailer cleaning for commercial fleets.
-            </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We specialize in scheduled washing programs tailored to your fleet size and business operations. Our mobile service brings all equipment to your location.
+              FleetCleanTN is a locally owned, owner-operated mobile fleet washing company serving Nashville businesses with reliable scheduled service and professional results.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">

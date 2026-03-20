@@ -12,7 +12,7 @@ export default function Footer() {
               <img src="/fleetcleantn(logo_no_backdrop).png" alt="FleetClean TN" className="h-24 w-auto object-contain" />
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Owner-operated mobile fleet washing in Nashville, TN. Professional truck and trailer cleaning for commercial fleets.
+              Locally owned, owner-operated fleet washing for Nashville businesses.
             </p>
           </div>
 
@@ -66,8 +66,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <a href="mailto:info@fleetcleantn.com" className="hover:text-blue-400 transition-colors break-all">
-                    info@fleetcleantn.com
+                  <a href="mailto:quote@fleetcleantn.com" className="hover:text-blue-400 transition-colors break-all">
+                    quote@fleetcleantn.com
                   </a>
                 </div>
               </li>
