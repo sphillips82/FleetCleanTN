@@ -113,8 +113,17 @@ Deno.serve(async (req: Request) => {
     if (!emailResponse.ok) {
       const errorData = await emailResponse.text();
       console.error("Resend API error:", errorData);
+
+      let errorMessage = "Failed to send email. Please try again.";
+      try {
+        const parsedError = JSON.parse(errorData);
+        errorMessage = parsedError.message || errorMessage;
+      } catch {
+        errorMessage = errorData || errorMessage;
+      }
+
       return new Response(
-        JSON.stringify({ success: false, message: "Quote request is temporarily unavailable. Please call (629) 209-9274." }),
+        JSON.stringify({ success: false, message: `Email error: ${errorMessage}` }),
         {
           status: 500,
           headers: {

@@ -21,21 +21,42 @@ export default function Contact() {
     setSubmitStatus('idle');
     setErrorMessage('');
 
-    try {
-      const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/contact-form`;
+    if (formData.honeypot) {
+      setSubmitStatus('success');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        fleetSize: '',
+        message: '',
+        honeypot: '',
+      });
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+      setIsSubmitting(false);
+      return;
+    }
 
-      const response = await fetch(apiUrl, {
+    try {
+      const response = await fetch('https://formspree.io/f/xnnqbqdr', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          fleetSize: formData.fleetSize,
+          message: formData.message,
+          _replyto: formData.email,
+          _subject: 'New Fleet Quote Request - FleetCleanTN',
+        }),
       });
 
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        throw new Error(data.message || 'Failed to send message');
+      if (!response.ok) {
+        throw new Error('Failed to send message');
       }
 
       setSubmitStatus('success');
@@ -53,7 +74,7 @@ export default function Contact() {
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Something went wrong. Please try again.');
+      setErrorMessage('Unable to send quote request. Please call (629) 209-9274.');
     } finally {
       setIsSubmitting(false);
     }
