@@ -74,7 +74,7 @@ export default function Contact() {
     } catch (error) {
       console.error('Error submitting form:', error);
       setSubmitStatus('error');
-      setErrorMessage('Unable to send quote request. Please call (629) 209-9274.');
+      setErrorMessage('Failed to send message. Please call (629) 209-9274.');
     } finally {
       setIsSubmitting(false);
     }
